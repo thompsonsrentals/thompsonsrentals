@@ -1,13 +1,4 @@
 <script>
-  
-  var map, mapOptions, currentLocation, currentLocationMarker;
-function loadMapScript() {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.id = "googleMaps"
-  script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap";
-  document.body.appendChild(script);
-}
       function initialize() {
         var myLatlng = new google.maps.LatLng(54.506019, -1.354978);
         var map_canvas = document.getElementById('map_canvas');
@@ -422,7 +413,7 @@ function loadMapScript() {
     </div>
 </div>
 
-<div class="row show-for-small-up">
+<div class="row show-for-large-up">
   <div class="large-12 columns">
     <div class="large-6 columns">
       <div class="panel contact_us">
@@ -433,25 +424,25 @@ function loadMapScript() {
       <div class="panel contact_us">
         <div id="rent_where">
           <div class="blue_title_text">Where do we rent?</div>
-          <h2 class="locations">We rent washing machines, dishwashers and dryers in Teesside and the surrounding areas.</h2>
-          <h3 class="locations">Billingham</h3>
-          <h3 class="locations">Darlington</h3>
-          <h3 class="locations">Eaglescliffe</h3>
-          <h3 class="locations">Ferryhill</h3>
-          <h3 class="locations">Guisborough</h3>
-          <h3 class="locations">Hartlepool</h3>
-          <h3 class="locations">Loftus</h3>
-          <h3 class="locations">Middlesbrough</h3>
-          <h3 class="locations">Newton Aycliffe</h3>
-          <h3 class="locations">Northallerton</h3> 
-          <h3 class="locations">Norton</h3> 
-          <h3 class="locations">Peterlee</h3>
-          <h3 class="locations">Redcar</h3>
-          <h3 class="locations">Saltburn</h3>
-          <h3 class="locations">Stockton-on-Tees</h3>
-          <h3 class="locations">Stokesley</h3>
-          <h3 class="locations">Thornaby</h3>
-          <h3 class="locations">Yarm</h3>
+          <p class="locations">We rent washing machines, dishwashers and dryers in Teesside and the surrounding areas.</p>
+          <p>Billingham<br/>
+            Darlington<br/>
+            Eaglescliffe<br/>
+            Ferryhill<br/>
+            Guisborough<br/>
+            Hartlepool<br/>
+            Loftus<br/>
+            Middlesbrough<br/>
+            Newton Aycliffe<br/>
+            Northallerton<br/> 
+            Norton<br/> 
+            Peterlee<br/>
+            Redcar<br/>
+            Saltburn<br/>
+            Stockton-on-Tees<br/>
+            Stokesley<br/>
+            Thornaby<br/>
+            Yarm</p>
         </div>
       </div>
     </div>
