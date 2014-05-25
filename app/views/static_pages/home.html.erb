@@ -1,3 +1,35 @@
+<script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(54.506019, -1.354978);
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+            center: myLatlng,
+            zoom: 9,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+        var map = new google.maps.Map(map_canvas, map_options)
+        var populationOptions = {
+            strokeColor: '#f06b26',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#EDBBA1',
+            fillOpacity: 0.35,
+            map: map,
+            center: myLatlng,
+            radius: 30000
+            };
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title:"Hello World!"
+            });
+        var circle = new google.maps.Circle(populationOptions);
+      }
+  
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 <% title "We Rent Washing Machines, Dryers and Dishwashers in Teesside!" %>
 
 <!-- header image & bar start -->
@@ -62,7 +94,7 @@
         
             <div class="panel why">
             
-            <div class="why_rent_title">WHY RENT FROM US?</div>
+            <div class="why_rent_title">Why Rent From Us?</div>
             <div class="rent_reason"><img src="assets/tick.png">No Long-term Contracts</div>
             <div class="rent_reason"><img src="assets/tick.png">Flexible Payment Options</div>
             <div class="rent_reason"><img src="assets/tick.png">Free Parts & Labour</div>
@@ -87,7 +119,7 @@
             <!----- How It Works (Large Screen Plus) ----->
 
             <div class="panel how_it_works show-for-large-up">
-                <div class="blue_title_text">HOW IT WORKS</div>
+                <div class="blue_title_text">How It Works</div>
                 <div class="row">
                     <div class="large-12 columns">
                         <div class="large-1 columns">
@@ -173,7 +205,7 @@
             <!----- How It Works (Medium Screen Only) ----->
             
             <div class="panel how_it_works show-for-medium-only">
-                <div class="blue_title_text">HOW IT WORKS</div>
+                <div class="blue_title_text">How It Works</div>
                 <div class="row">
                     <div class="small-1 columns">
                         <div class="panel"><div class="how_number">1</div>
@@ -247,7 +279,7 @@
             <!------- How It Works (Small Screen) ------>
             
             <div class="panel how_it_works show-for-small-only">
-                <div class="blue_title_text">HOW IT WORKS</div>
+                <div class="blue_title_text">How It Works</div>
                 <div class="row">
                     <div class="large-12 columns">
                         <div class="large-1 columns">
@@ -379,6 +411,42 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="row show-for-small-up">
+  <div class="large-12 columns">
+    <div class="large-6 columns">
+      <div class="panel contact_us">
+        <div id="map_canvas"></div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="panel contact_us">
+        <div id="rent_where">
+          <div class="blue_title_text">Where do we rent?</div>
+          <h2 class="locations">We rent washing machines, dishwashers and dryers in Teesside and the surrounding areas.</h2>
+          <h3 class="locations">Billingham</h3>
+          <h3 class="locations">Darlington</h3>
+          <h3 class="locations">Eaglescliffe</h3>
+          <h3 class="locations">Ferryhill</h3>
+          <h3 class="locations">Guisborough</h3>
+          <h3 class="locations">Hartlepool</h3>
+          <h3 class="locations">Loftus</h3>
+          <h3 class="locations">Middlesbrough</h3>
+          <h3 class="locations">Newton Aycliffe</h3>
+          <h3 class="locations">Northallerton</h3> 
+          <h3 class="locations">Norton</h3> 
+          <h3 class="locations">Peterlee</h3>
+          <h3 class="locations">Redcar</h3>
+          <h3 class="locations">Saltburn</h3>
+          <h3 class="locations">Stockton-on-Tees</h3>
+          <h3 class="locations">Stokesley</h3>
+          <h3 class="locations">Thornaby</h3>
+          <h3 class="locations">Yarm</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </div>

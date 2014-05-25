@@ -57,6 +57,7 @@ color: white;
     font-size: 2em;
     font-weight: normal;
     margin: 0px 0px 20px 0px;
+    text-align: center;
     }
     img {
     margin-right: 10px;
@@ -151,4 +152,17 @@ width: 100%;
 background: #0060b8;
 padding-top: 20px;
 color: white;
+}
+
+#map_canvas {
+width: 100%;
+height: 600px;
+}
+
+#rent_where {
+height: 600px; 
+  h3.locations, h2.locations {
+    font-size: 1em;
+    font-weight: normal;
+  }
 }
